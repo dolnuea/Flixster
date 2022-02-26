@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     * 1. Define a data model class as the data source, done
     * 2. Add the recyclerview to the layout, done
     * 3. Create a custom row layout XML file to visualize the item, done
-    * 4. Create an adapter and viewholder to render the item
+    * 4. Create an adapter and viewholder to render the item, done
     * 5. Bind the adapter to the data source to populate th recyclerview
     * 6. Bind a layout manager to the recyclerview
     * */
@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val movieAdapter = MovieAdapter(this, movies)
 
         val client = AsyncHttpClient()
         client.get(NOW_PLAYING_URL, object : JsonHttpResponseHandler(){
