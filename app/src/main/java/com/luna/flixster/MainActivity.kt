@@ -12,6 +12,16 @@ private const val NOW_PLAYING_URL= "https://api.themoviedb.org/3/movie/now_playi
 private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
     private val movies = mutableListOf<Movie>()
+
+    /*
+    * 1. Define a data model class as the data source, done
+    * 2. Add the recyclerview to the layout, done
+    * 3. Create a custom row layout XML file to visualize the item, done
+    * 4. Create an adapter and viewholder to render the item
+    * 5. Bind the adapter to the data source to populate th recyclerview
+    * 6. Bind a layout manager to the recyclerview
+    * */
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
