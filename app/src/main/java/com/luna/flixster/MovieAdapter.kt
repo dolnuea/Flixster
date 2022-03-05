@@ -13,6 +13,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation
 
 private const val TAG = "MovieAdapter"
 const val MOVIE_EXTRA = "MOVIE_EXTRA"
@@ -49,8 +51,11 @@ class MovieAdapter(private val context : Context, private val movies: List<Movie
             tvOverview.text = movie.overview
             Glide.with(context)
                 .load(movie.posterImageURL)
+                    .centerCrop()
+                    .transform(RoundedCornersTransformation(30,10))
                 .placeholder(R.drawable.hourglass)
                 .error(R.drawable.error)
+
                 .into(ivPoster)
         }
 
