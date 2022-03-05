@@ -19,9 +19,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthough GIF
 
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
-<img src="https://media1.giphy.com/media/vlaRZyrAiugufsZT3a/giphy.gif?cid=790b7611ce7f8cee6df25ad2f26f8503eb4e477a5c08698d&rid=giphy.gif&ct=g" width=250><br>
+<img src="https://media0.giphy.com/media/n30Jgb3a2cmXC7NSPu/giphy.gif?cid=790b76110feb2d1d480056cb61c7b9b3391d8116e560751d&rid=giphy.gif&ct=g" width=250><br>
 
 ### Notes
 My biggest challenge while working on part 2 was, trying to get YoutubePlayerView to work. My app kept crashing everytime I attempted to watch the trailer video, and I got the error "E/YouTubeAndroidPlayerAPI: Embed config is not supported in RemoteEmbeddedPlayer." I searched on Google, and looked at stack overflow posts about this issue, but could not find a helpful solution. The video do not load on Android API 27, and at least loads on API 30. I have played around with the layout height of the youtube video in the layout file, and finally got it to work without crashing the app. However, unfortunately videos are not exactly centered. I checked videos on YouTube app, and the same issues persist on the Youtube App as well. I could not find a solution to this problem.
